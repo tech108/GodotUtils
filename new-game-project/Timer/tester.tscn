@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dkic2w74tw6k1"]
+
+[ext_resource type="Script" uid="uid://bkjtar1ujirnc" path="res://tester.gd" id="1_7epwc"]
+[ext_resource type="PackedScene" uid="uid://cllha1cynus8d" path="res://Timer/timer.tscn" id="2_hl50w"]
+
+[node name="Tester" type="Node2D" unique_id=1034589436 node_paths=PackedStringArray("timer", "display", "display2")]
+script = ExtResource("1_7epwc")
+timer = NodePath("Timer")
+display = NodePath("Camera2D/Control/Label")
+display2 = NodePath("Camera2D/Control/Label2")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1300670055]
+
+[node name="Control" type="Control" parent="Camera2D" unique_id=1405444854]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Camera2D/Control" unique_id=1750196511]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Camera2D/Control" unique_id=296801112]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -49.5
+offset_top = 55.0
+offset_right = 47.5
+offset_bottom = 78.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Still Running"
+horizontal_alignment = 1
+
+[node name="Timer" parent="." unique_id=741271301 instance=ExtResource("2_hl50w")]
+timeInSeconds = 5
