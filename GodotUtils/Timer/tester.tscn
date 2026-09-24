@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dkic2w74tw6k1"]
 
-[ext_resource type="Script" uid="uid://bkjtar1ujirnc" path="res://tester.gd" id="1_7epwc"]
+[ext_resource type="Script" uid="uid://bkjtar1ujirnc" path="res://Timer/tester.gd" id="1_7epwc"]
 [ext_resource type="PackedScene" uid="uid://cllha1cynus8d" path="res://Timer/timer.tscn" id="2_hl50w"]
 
 [node name="Tester" type="Node2D" unique_id=1034589436 node_paths=PackedStringArray("timer", "display", "display2")]
